@@ -1,0 +1,3 @@
+const quemSomos = "O SenaMUN é a simulação do Senac, que visa ampliar o mundo das simulações da ONU (MUN’s) a partir de debates sobre diversos tópicos relevantes ao redor do mundo, e desta forma, engajando jovens na construção de solução para problemas locais e globais. A organização é realizada por parte dos alunos, que além de organizarem a nossa simulação interna, também participam de simulações externas em escolas internacionais e em escolas públicas. O SenaMUN 24 acontecerá nos dias 31/10 e 01/11"
+
+export default quemSomos
