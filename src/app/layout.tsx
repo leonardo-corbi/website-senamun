@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "SenaMUN III",
-  description: "SenaMUN III",
+  description: "Venha conhecer nossa simulação!",
 };
 
 export default function RootLayout({
