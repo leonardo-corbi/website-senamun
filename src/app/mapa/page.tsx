@@ -40,7 +40,7 @@ export default function Campus() {
       </section>
       <section className="bg-blue-custom h-40 w-full text-center flex flex-col justify-center">
         <h1 className="text-4xl text-yellow-custom font-semibold">
-          Mapa do Acadêmico 1 - Segundo Andar
+          Google Maps - Senac Nações Unidas
         </h1>
         <p className="text-lg text-white">Observe abaixo</p>
       </section>
