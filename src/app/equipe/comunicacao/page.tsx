@@ -37,7 +37,7 @@ const Comunicacao: React.FC = () => {
               width={260}
               height={260}
             />
-            <div className="p-4 text-center text-nowrap">
+            <div className="p-4 text-center">
               <h3 className="text-xl font-semibold mb-1">{secretario.nome}</h3>
               <p className="text-lg">{secretario.cargo}</p>
             </div>
