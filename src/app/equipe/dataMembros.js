@@ -1,9 +1,9 @@
 const dadosMembros = {
     sec: [
         {
-            "nome": "GABRIELA RIBEIRO SOARES",
+            "nome": "GABRIELLA RIBEIRO SOARES",
             "cargo": "Secretária Geral",
-            "imagem": "gabriela-soares.jpg",
+            "imagem": "gabriella-soares.jpg",
             "mensagem": "Prezados delegados e advisors, sou Gabriella Ribeiro e tenho o privilégio de ser a Secretária Geral deste ano! Entrar no mundo das simulações da ONU, foi algo inédito pra mim, porém acessá-lo me proporcionou o desenvolvimento das habilidades envolvidas, como a argumentação, debate, geopolítica mundial — e a improvisação. Além disso, conheci pessoas incríveis, me diverti muito e adquiri novos conhecimentos, especialmente sobre os assuntos e países abordados.  Em suma, participar de uma conferência é uma experiência única, independentemente de quantas você tenha feito. Sob quaisquer dúvidas e anseios, podem nos contatar, estamos a disposição para saná-las. Espero que todos possam ter uma experiência única no SenaMUN, assim como eu tive! Aguardo vocês em Outubro!"
         },
         {
