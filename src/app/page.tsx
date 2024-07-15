@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </section>
       {/* Seção da Carta do Secretariado */}
-      <section className="bg-blue-custom py-12 2xl:px-96 xl:px-48 lg:px-40 md:px-32 flex flex-col justify-center h-auto 2xl:h-screen xl:h-screen lg:h-fit ">
+      <section className="bg-blue-custom py-20 2xl:px-96 xl:px-48 lg:px-40 md:px-32 flex flex-col justify-center h-auto">
         <div className="">
           {/* Título da Carta do Secretariado */}
           <h1 className="text-white text-3xl xl:text-5xl font-semibold tracking-widest text-center py-5 border-y-4 border-yellow-custom mx-12 ">
@@ -193,7 +193,7 @@ export default function Home() {
               controls
               className="xl:block hidden border-4 rounded-xl border-yellow-custom ml-2"
             >
-              {/* <source src="/video-inicio.mp4" type="video/mp4" /> */}
+              <source src="/video-inicio.mp4" type="video/mp4" />
               Seu navegador não suporta o Video Player
             </video>
           </section>

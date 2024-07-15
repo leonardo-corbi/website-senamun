@@ -39,7 +39,7 @@ export default function ComitesPortuguese() {
 
   return (
     <div>
-      <HomepageHeader pageTitle="Comitês-" pageSubtitle="Em inglês" />
+      <HomepageHeader pageTitle="Comitês-" pageSubtitle="Em português" />
       <div className="flex flex-col justify-center bg-gray-100 min-h-fit">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-4 md:p-6 lg:p-10 justify-center">
           {committees.map((committee, index) => (
@@ -66,11 +66,14 @@ export default function ComitesPortuguese() {
                 <p className="text-lg">{committee.comite}</p>
                 <p className="text-lg">{committee.modalidade}</p>
                 <div className="mt-auto">
-                  <button
+                  {/* <button
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                     onClick={() => openModal(committee)}
                   >
                     Ver Mais
+                  </button> */}
+                  <button className="bg-blue-300 text-white px-4 py-2 rounded cursor-default">
+                    Em construção
                   </button>
                 </div>
               </div>

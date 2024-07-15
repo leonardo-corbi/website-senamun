@@ -6,6 +6,7 @@ export const menuData = [
     submenu: [
       { name: "Quem Somos", href: "/quem-somos" },
       { name: "Equipe", href: "/equipe" },
+      { name: "Galeria de Fotos", href: "/galeria" },
     ],
   },
   {

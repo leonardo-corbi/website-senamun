@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import resources from "./dataRecursos";
 import HomepageHeader from "@/components/HomepageHeader";
@@ -5,18 +7,26 @@ import HomepageHeader from "@/components/HomepageHeader";
 export default function Recursos() {
   const headerHeight = 80;
 
-  const ResourceCard = ({ title, description, link }: any) => (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="border-yellow-custom border-2 p-8 rounded-xl text-center"
+  const ResourceCard = ({ title, description, link, ativado }: any) => (
+    <div
+      onClick={() => {
+        if (ativado) {
+          window.location.href = link;
+        } else {
+          alert("Em construção.");
+        }
+      }}
+      className={`border-yellow-custom border-2 p-8 rounded-xl text-center duration-500 ${
+        ativado
+          ? "hover:scale-105 hover:blur-sm cursor-pointer"
+          : "cursor-not-allowed opacity-50"
+      }`}
     >
       <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">
         {title}
       </h5>
       <p className="font-normal text-yellow-custom">{description}</p>
-    </a>
+    </div>
   );
 
   return (
