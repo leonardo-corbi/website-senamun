@@ -174,7 +174,10 @@ export default function Home() {
                 {/* Item de horário do evento */}
                 <li className="flex gap-3 items-center">
                   <FaRegClock className="text-4xl text-yellow-custom items-center" />{" "}
-                  Das 00:00 até 00:00
+                  <div className="flex flex-col">
+                    <p>Quinta: 12h-18h15</p>
+                    <p>Sexta: 13h-19h</p>
+                  </div>
                 </li>
                 {/* Item de localização do evento */}
                 <li className="flex gap-3 items-center">

@@ -16,11 +16,11 @@ const Orientadores: React.FC = () => {
   const secretariosSec = dados["ori"];
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 min-h-screen">
       <h2 className="text-4xl font-bold text-center my-14 underline">
         Orientadores
       </h2>
-      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center">
         {secretariosSec.map((secretario, index) => (
           <div
             key={index}
