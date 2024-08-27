@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-custom">
+    <nav className="bg-blue-custom relative z-50">
       <div className="2xl:max-w-screen-2xl max-w-screen-xl mx-auto px-2 md:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-20">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
                       )}
                     </a>
                     {item.submenu && dropdownOpen === item.name && (
-                      <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 transform scale-100 opacity-100">
+                      <div className="z-100 origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 transform scale-100 opacity-100">
                         {item.submenu.map((subItem) => (
                           <a
                             key={subItem.name}
