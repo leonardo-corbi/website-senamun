@@ -16,6 +16,7 @@ export function Instagram() {
       try {
         const response = await fetch(url);
         const feed = await response.json();
+        console.log(feed);
         if (Array.isArray(feed.data)) {
           setMediaItems(feed.data);
           console.log(feed.data);
