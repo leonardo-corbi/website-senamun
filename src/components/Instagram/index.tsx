@@ -58,19 +58,19 @@ export function Instagram() {
         {mediaItems.map((item: any) => (
           <div
             key={item.id}
-            onLoad={() => console.log(item.permalink)}
             className="relative group overflow-hidden rounded-lg"
-            style={{ zIndex: 1 }} // Defina o z-index dos cards
           >
+            {/* Link colocado acima de todos os elementos para garantir o clique */}
             <Link
               href={item.permalink}
-              className="absolute inset-0"
+              className="absolute inset-0 z-10"
               prefetch={false}
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="sr-only">View Post</span>
             </Link>
+
             {item.media_type === "CAROUSEL_ALBUM" ? (
               item.children.data.length > 0 && (
                 <div>
@@ -125,7 +125,9 @@ export function Instagram() {
                 Tipo de mídia desconhecido
               </p>
             )}
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+
+            {/* Overlay ajustado para estar abaixo do link */}
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-0">
               <div className="flex items-center gap-4 text-sm text-white">
                 <div className="flex items-center gap-1">
                   <HeartIcon className="w-4 h-4 text-white" />
