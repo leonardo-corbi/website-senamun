@@ -20,6 +20,7 @@ export const menuData = [
       { name: "Comitês", href: "/comites" },
       { name: "Equipe", href: "/equipe" },
       { name: "Cronograma", href: "/cronograma" },
+      { name: "Inscrição", href: "/inscricao" },
       { name: "Recursos", href: "/recursos" },
       { name: "Mapa", href: "/mapa" },
       { name: "Notícias", href: "/noticias" },
