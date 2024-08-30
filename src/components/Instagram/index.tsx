@@ -36,7 +36,6 @@ export function Instagram() {
       <header className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-4">
           <Avatar className="w-12 h-12 md:w-16 md:h-16">
-            <AvatarImage src="/placeholder-user.jpg" alt="@shadcn" />
             <AvatarFallback>
               <img src={"/logo-senamun.svg"} alt="SN" />
             </AvatarFallback>
