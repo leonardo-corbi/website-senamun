@@ -1,45 +1,59 @@
-import React from "react";
-import "./EdicoesAnteriores.css";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import { getImages } from "@/lib/getImages";
 
-export default function EdicoesAnteriores() {
-  // Lista de imagens com os nomes dos arquivos locais e os anos correspondentes
-  const fotos = [
-    { url: "foto1.JPG", ano: 2022 },
-    { url: "foto2.JPG", ano: 2022 },
-    { url: "foto3.JPG", ano: 2022 },
-    { url: "foto4.JPG", ano: 2022 },
-    { url: "foto5.JPG", ano: 2022 },
-    { url: "foto6.JPG", ano: 2022 },
-    { url: "foto7.JPG", ano: 2022 },
-    { url: "foto9.JPG", ano: 2022 },
-    { url: "foto10.JPG", ano: 2022 },
-    { url: "foto11.JPG", ano: 2022 },
-    { url: "foto12.JPG", ano: 2022 },
-    { url: "foto13.JPG", ano: 2022 },
-    { url: "foto14.JPG", ano: 2022 },
-    { url: "foto15.JPG", ano: 2022 },
-    { url: "foto16.JPG", ano: 2022 },
-    { url: "foto17.JPG", ano: 2022 },
-    { url: "foto18.JPG", ano: 2023 },
-    { url: "foto19.JPG", ano: 2023 },
-    { url: "foto20.JPG", ano: 2023 },
-    { url: "foto21.JPG", ano: 2023 },
-  ];
+export default function Galeria() {
+  const years = ["2023", "2022"];
 
   return (
-    <div className="edicoes-container">
-      <h1 className="text-xl lg:text-2xl font-semibold">
-        Galeria de Fotos - Edições Passadas
-      </h1>
-      <hr className="mx-10 my-2 border" />
-      <div className="fotos-container">
-        {fotos.map((foto, index) => (
-          <div key={index} className="foto-item">
-            <img src={`/edicoes/${foto.url}`} alt={`Edição ${foto.ano}`} />
-            <div className="foto-legenda">{`Edição ${foto.ano}`}</div>
-          </div>
-        ))}
+    <div className="container mx-auto py-12 md:px-0 px-2">
+      <div className="mb-3">
+        <h1 className="text-3xl font-semibold">Galeria de Fotos</h1>
+        <p className="text-lg font-normal text-gray-500">
+          Todos direitos reservados - ©
+        </p>
       </div>
+      <Tabs defaultValue="2023" className="mb-8">
+        <TabsList className="flex justify-center gap-4 mb-6">
+          {years.map((year) => (
+            <TabsTrigger key={year} value={year}>
+              {year}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+        {years.map((year) => {
+          const images = getImages(year);
+          return (
+            <TabsContent key={year} value={year}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {images.map((src, index) => (
+                  <div key={index} className="relative group">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <img
+                          src={src}
+                          alt={`Photo ${index + 1}`}
+                          width="300"
+                          height="300"
+                          className="w-full h-auto rounded-lg object-cover transition-opacity group-hover:opacity-80 cursor-pointer"
+                          style={{ aspectRatio: "300/300", objectFit: "cover" }}
+                        />
+                      </DialogTrigger>
+                      <DialogContent className="p-0 flex items-center justify-center max-w-screen-lg max-h-screen-lg">
+                        <img
+                          src={src}
+                          alt={`Photo ${index + 1}`}
+                          className="w-auto h-auto max-w-full max-h-full object-contain"
+                        />
+                      </DialogContent>
+                    </Dialog>
+                  </div>
+                ))}
+              </div>
+            </TabsContent>
+          );
+        })}
+      </Tabs>
     </div>
   );
 }
