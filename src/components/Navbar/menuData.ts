@@ -24,6 +24,7 @@ export const menuData = [
       { name: "Recursos", href: "/recursos" },
       { name: "Mapa", href: "/mapa" },
       { name: "Notícias", href: "/noticias" },
+      { name: "Parcerias", href: "/parcerias" },
     ],
   },
   {
