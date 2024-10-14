@@ -15,7 +15,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/NjUyODI2MjQ1NTIx?cjc=na7x4q3",
     whatsapp: "https://chat.whatsapp.com/GMtYLUsZxXP5htQ93Rlrpu",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1J0mK5DhJSFp74f3w1bbtWy-LwB3k1aNr/view?usp=sharing",
     idioma: "ptbr",
     imagem: "HR_ElSalvador.png",
   },
@@ -56,7 +56,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/Njc2NTk5Mjg3MDg0?cjc=bhxtemp",
     whatsapp: "https://chat.whatsapp.com/Ew3WIYPxZrjE3MDWjSGvep",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1Y1Lq4EQ0Rs1_9TGMiH6nXOOLa53oZie-/view",
     idioma: "ptbr",
     imagem: "OIT_Moda.jpg",
   },
