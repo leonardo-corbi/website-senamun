@@ -66,7 +66,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/NjUyODI2MjcxNDg4?cjc=f5dobyq",
     whatsapp: "https://chat.whatsapp.com/F2MACdg4hkn6HDbE7pgOa4",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1uUrvBjVhDhIlFxekOlg1nJYWn91zcqj5/view?usp=drive_link",
     idioma: "ptbr",
     imagem: "ECOSOC_Haiti.png",
   },
