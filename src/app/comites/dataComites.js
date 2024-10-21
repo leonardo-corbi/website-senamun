@@ -25,7 +25,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/Njc2NTk5MzA1ODU1?cjc=mwudzt2",
     whatsapp: "https://chat.whatsapp.com/CjIpNTdJ38tCNQvjC3vkph",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1RYOTlkmAlFvN11kpULv8sAtSfb5G3bbF/view",
     idioma: "ptbr",
     imagem: "SC_Narcotráfico.jpg",
   },
@@ -35,7 +35,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/NjgxNjE3OTM5Nzgy?cjc=wczy4do",
     whatsapp: "https://chat.whatsapp.com/B6xsZmeuyU6Hz5Os9UDRYa",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1Mf7NhxH3ER-kD1EKCXqcZNu2-XUQlf8g/view",
     idioma: "ptbr",
     imagem: "OMC_Cripto.jpg",
   },
