@@ -45,7 +45,7 @@ const dadosComites = [
       "UNESCO (Organização das Nações Unidas para a Educação, a Ciência e a Cultura)",
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/NjgxNjE3OTgyNTA0?cjc=gpbhakg",
-    whatsapp: "hhttps://chat.whatsapp.com/D3akV8iCTrzHXTIsOeJ6ob",
+    whatsapp: "https://chat.whatsapp.com/D3akV8iCTrzHXTIsOeJ6ob",
     pdf: "https://drive.google.com/file/u/6/d/1MEq7Xcngj7UjiVKfQLwz9UNaTcz2MGDi/view?usp=drive_link",
     idioma: "ptbr",
     imagem: "UNESCO_Educação.jpg",
