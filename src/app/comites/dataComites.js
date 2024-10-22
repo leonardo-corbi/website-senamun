@@ -86,7 +86,7 @@ const dadosComites = [
     modalidade: "Dupla",
     classroom: "https://classroom.google.com/c/NjUyODI2Mzk5MDEy?cjc=iis74fj",
     whatsapp: "https://chat.whatsapp.com/E4MLyv6btyg1q64hyOwhUF",
-    pdf: null, // Sem PDF
+    pdf: "https://drive.google.com/file/d/1vyHe1-rMEvia6YtpfivDJF5oS_gsw2CF/view?usp=drive_link",
     idioma: "ptbr",
     imagem: "PNUMA_África.jpeg",
   },
