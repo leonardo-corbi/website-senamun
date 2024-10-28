@@ -58,7 +58,7 @@ const dadosMembros = {
       imagem: "erick-moreira.jpg",
     },
     {
-      nome: "IZABELLA FRARE FREITAS (borboleta)",
+      nome: "IZABELLA FRARE FREITAS",
       cargo: "Diretoria de Comunicação",
       imagem: "izabella-freitas.jpg",
     },
