@@ -1,22 +1,28 @@
 const resources = [
-    {
-      title: "Documentos oficiais",
-      description: "Link para pasta do Drive",
-      link: "https://drive.google.com/documentosoficiais",
-      ativado: false,
-    },
-    {
-      title: "Guias de Estudo",
-      description: "Link para pasta do Drive",
-      link: "https://drive.google.com/guiasdeestudo",
-      ativado: false,
-    },
-    {
-      title: "Google Classroom",
-      description: "Link para pasta do Drive",
-      link: "https://drive.google.com/googleclassroom",
-      ativado: false,
-    },
-  ];
+  {
+    title: "DPO",
+    description: "Documento de Posição Oficial",
+    link: "recursos/documento-de-posicao-oficial.pdf",
+    ativado: true,
+  },
+  {
+    title: "Exemplo de Abertura",
+    description: "Discurso que abre o debate",
+    link: "recursos/discurso-de-abertura.pdf",
+    ativado: true,
+  },
+  {
+    title: "Exemplo Resolução",
+    description: "Português",
+    link: "recursos/modelo-resolucao.docx",
+    ativado: true,
+  },
+  {
+    title: "Resolution Example",
+    description: "Inglês",
+    link: "recursos/resolution-model.docx",
+    ativado: true,
+  },
+];
 
-  export default resources
+export default resources;
